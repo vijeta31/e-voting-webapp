@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+      <meta charset="UTF-8">
+    <title>
+      Election Officer Page
+    </title>
+  </head>
+    <body>
+      <form action='/electionofficer' method="POST">
+          <label>Election_ID</label>
+          <input type="text" name="eid">
+
+
+          <br>
+          <br>
+          <br>
+          <button type="submit">STATUS</button>
+      </form>
+        <br>
+          <br>
+          <br>
+      {% if position %}
+        <p>{{ position }}</p>
+    {% endif %}
+
+
+    <br>
+    <br>
+
+    {% if votecount %}
+        <p>{{ votecount }}</p>
+    {% endif %}
+      <br>
+    {% if name %}
+        <p>{{ name }}</p>
+    {% endif %}
+
+      <br>
+    {% if party %}
+        <p>{{ party }}</p>
+    {% endif %}
+
+    </body>
+
+
+</html>

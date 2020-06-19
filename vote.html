@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+      <meta charset="UTF-8">
+    <title>
+      Login Page
+    </title>
+    <style>
+
+      fieldset {
+      background-color : #FFA07A;
+      }
+
+      legend {
+      background-color: gray;
+      color: white;
+      padding: 5px 10px;
+      }
+    </style>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js">
+    </script>
+    <script>
+    $(document).ready(function () {
+    $('#btnSubmit').on('click', function () {
+    var myForm = $("#form1");
+    if (myForm) {
+      $(this).prop('disabled', true);
+      $(myForm).submit();
+      }
+      });
+      });
+    </script>
+
+
+
+  </head>
+    <body>
+    <h1>
+      <p>Manoj-------101       |||  Shanthi-----102  |||    Rhea-----103</p>
+      <p>Nagarjuna---201   |||      Akkineni-----202  |||  Swami----203</p>
+      <p>Vishakha---301  |||        Muskaan-----302  |||   Naveen---303</p>
+      <p>Siddhartha----401  |||     Nimrat-----402   |||  Kaira-----403</p>
+    </h1>
+      <br>
+      <br>
+      <br>
+        <br>
+    <form action="/vote" method="POST"  id="form1">
+      <fieldset>
+        <legend>Vote Here!</legend>
+      <label for="President1">Choose President:</label>
+
+        <select name="President">
+          <option value="101">101</option>
+          <option value="102">102</option>
+          <option value="103">103</option>
+        </select>
+        <br>
+        <br>
+        <label for="Vice_President1">Choose Vice President:</label>
+
+        <select name="Vice_President">
+          <option value="201">201</option>
+          <option value="202">202</option>
+          <option value="203">203</option>
+        </select>
+        <br>
+        <br>
+        <label for="Joint_sec1">Choose Joint Secratory:</label>
+        
+        <select name="Joint_sec">
+          <option value="301">301</option>
+          <option value="302">302</option>
+          <option value="303">303</option>
+        </select>
+        <br>
+        <br>
+        <label for="GScash1">Choose GSCASH:</label>
+
+        <select name="GSCash">
+          <option value="401">401</option>
+          <option value="402">402</option>
+          <option value="403">403</option>
+        </select>
+
+
+
+        <br>
+        <br>
+        <input type="submit" value="Submit" id ="btnSubmit">
+      </fieldset>
+    </form>        
+
+    </body>
+
+
+</html>

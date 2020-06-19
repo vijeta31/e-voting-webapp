@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+      <meta charset="UTF-8">
+    <title>
+      Login Page
+    </title>
+
+      <style>
+
+      fieldset {
+      background-color: #eeeeee;
+      }
+
+      legend {
+      background-color: gray;
+      color: white;
+      padding: 5px 10px;
+      }
+    </style>
+  </head>
+    <body>
+      <form action='/login' method="POST">
+           <fieldset>
+               <legend>Login Here</legend>
+          <label>Regid</label>
+          <input type="text" name="rid">
+
+          <label>Authentication Key</label>
+          <input type="text" name="authkey">
+
+          <br>
+          <br>
+          <br>
+          <button type="submit">LOGIN</button>
+         </fieldset>
+
+      </form>
+      {% if checked %}
+        <p>{{ checked }}</p>
+    {% endif %}
+
+
+    <br>
+    <br>
+
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+
+    </body>
+
+
+</html>
