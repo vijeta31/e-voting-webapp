@@ -15,6 +15,10 @@ Language used: Python,Html
 
 PyCharm IDE 
 
+Two tables where the data is stored/retrieved : 
+elect_record ----> for the details of election participants
+poliing_table -------> for the details of voters.
+
 Put all The HTML files in the Templates folder.
 I will further update the code by keeping images in the static folder.
 
