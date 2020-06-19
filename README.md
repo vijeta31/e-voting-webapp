@@ -13,4 +13,10 @@ For storage of Data we have used MySQL Database ran on XamP server and connected
 
 Language used: Python,Html
 
+PyCharm IDE 
+
+Put all The HTML files in the Templates folder.
+I will further update the code by keeping images in the static folder.
+
+
 Happy Coding!
